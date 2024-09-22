@@ -20,7 +20,7 @@ public class mainController {
         return  pushRep.getAllPush();
     }
     @PostMapping("savePush")
-    public void getAll(@RequestBody Push push){
-       pushRep.save(push);
+    public void getAll(@RequestBody List<Push> push){
+       pushRep.saveAll(push);
     }
 }
